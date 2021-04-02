@@ -1,0 +1,46 @@
+@import '../../main-constant'
+
+.card-group-wrap
+  & > div
+    padding: 15px
+    height: 250px
+    & > a > div
+      border: 1px solid $light-grey
+      border-radius: 10px
+      margin: 10px 0px
+      height: 100%
+      padding: 15px
+      transition: all .3s ease
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      & .title-card
+        color: $blue
+        & > svg
+          fill: $blue
+          width: 25px
+          height: 25px
+          & > g > g
+            fill: $blue
+        & > span
+          padding: 5px 10px
+          font-size: 1.2rem
+          font-weight: bold
+      & .description-card
+        padding: 10px 10px 10px 30px
+        color: $grey-333
+      & .link-card
+        padding: 15px 15px 15px 25px
+        &:after
+          content: '>'
+          display: inline
+          color: $blue
+          padding: 10px
+        & > span
+          font-weight: bold
+    &:hover > a  > div
+      transform: translateY(-10px)
+      box-shadow: 0 40px 32px -32px rgba(0,0,0,.6)
+      border-color: $blue
+    &:hover > a > div > .link-card  >span
+      text-decoration: underline

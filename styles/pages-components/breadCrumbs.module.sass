@@ -1,0 +1,28 @@
+@import '../main-constant'
+
+
+.bread-crumbs
+  padding: 50px 0px 10px
+  & > hr
+    background-color: $light-grey
+  & > div
+    display: flex
+    & > p
+      padding-right: 10px
+      &:after
+        content: ""
+        display: inline-block
+        width: 20px
+        vertical-align: middle
+        height: 20px
+        margin-left: 5px
+        background-image: url(/icons/ios-arrow-right-blue.svg)
+        background-size: contain
+      &:last-child:after
+        content: ""
+        display: none
+      & > a
+        color: $blue!important
+        &:hover
+          color: $main-color!important
+          text-decoration: underline!important

@@ -1,0 +1,338 @@
+@import '../../main-constant'
+
+
+.bread-crumbs
+  display: flex
+  margin-top: 20px
+  padding: 10px 0px
+  & > p
+    padding-right: 10px
+    &:after
+      content: ""
+      display: inline-block
+      width: 20px
+      vertical-align: middle
+      height: 20px
+      margin-left: 5px
+      background-image: url(/icons/ios-arrow-right-blue.svg)
+      background-size: contain
+    &:last-child:after
+      content: ""
+      display: none
+    & > a
+      color: $blue!important
+      &:hover
+        color: $main-color!important
+        text-decoration: underline!important
+
+
+.wrap-container-account
+  padding: 20px 40px
+  min-height: 50vh
+  & .side-nav-links
+    & > li.active
+      background-color: $main-color
+      & > a
+        color: #fff
+        font-weight: bold
+        & svg
+          fill: #fff!important
+      &:hover
+        background-color: $main-color
+    & > li
+      transition: all .3s ease
+      &:first-child
+        font-weight: bold
+        font-size: 1.1rem
+        & > a
+          padding-left: 0!important
+        & > a > span:first-child
+          margin-right: 5px!important
+        &:hover
+          background-color: transparent
+      &:hover
+        background-color: $light-2-grey
+        & > a
+          text-decoration: underline!important
+      & > a
+        display: flex
+        padding: 10px 15px
+        align-items: center
+        & > span:first-child
+          width: 20px
+          height: auto
+          margin-right: 10px
+          &> svg
+            height: 100%
+            width: 100%
+            fill: $blue
+  & .wrap-order-content
+    & .block-find-order
+      margin: 0
+      & input
+        width: 100%
+        padding: 10px
+        border: 1px solid $light-grey
+        outline: none
+        &:hover
+          border-color: $blue
+      & button
+        position: absolute
+        right: 20px
+        background-color: transparent
+        border: none
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        top: 3px
+        transition: all .3s ease
+        &:hover
+          background-color: $light-2-grey
+    & .guest-order-link
+      & p:first-child
+        font-weight: bold
+      & a
+        color: $blue
+        font-weight: bold
+        &:hover
+          text-decoration: underline!important
+
+
+.result-order-list
+  padding: 15px
+  background-color: $light-grey-blue
+  margin: 20px 0px
+  & .empty-result
+    padding: 80px 0px
+    & > p
+      color: $light-grey
+      font-size: 1.1rem
+    &  >div
+      width: 40px
+      height: auto
+      & > svg
+        width: 100%
+        height: 100%
+        fill: $light-2-grey
+
+.info-blocks-order
+  & > div
+    border: 1px solid $grey-blue
+    padding: 15px
+    border-radius: 3px
+    & > h4
+      font-weight: bold
+    & > a
+      color: $blue
+      font-size: 1.05rem
+      font-weight: bold
+      &:hover
+        text-decoration: underline!important
+
+
+
+.payment-method-wrap
+  padding: 15px
+  & .button-add-card
+    background-color: transparent
+    border: 1px dashed $light-2-grey
+    padding: 20px
+    width: 100%
+    text-align: left
+    border-radius: 5px
+    color: $blue
+    font-weight: bold
+    transition: all .3s ease
+    &:hover
+      background-color: $main-color
+      color: #fff
+      border: 1px solid $main-color
+
+
+.address-add-wrap
+  padding: 0px 15px 15px
+  & > p:nth-child(2)
+    font-size: 1.1rem
+  & .add-new-address-block
+    & .button-add-card
+      background-color: transparent
+      border: 1px dashed $light-2-grey
+      padding: 20px
+      width: 100%
+      text-align: left
+      border-radius: 5px
+      color: $blue
+      font-weight: bold
+      transition: all .3s ease
+      align-items: center
+      margin-top: 20px
+      & > div
+        width: 20px
+        height: 20px
+        margin: 0px 5px
+        & > svg
+          width: 100%
+          height: 100%
+          vertical-align: top
+      &:hover
+        background-color: $main-color
+        color: #fff
+        border: 1px solid $main-color
+
+
+.form-add-address
+  padding: 10px
+  border: 1px solid $grey-blue
+  border-radius: 5px
+  & input, select
+    padding: 10px
+    border: 1px solid $grey-blue
+    &:focus
+      outline: 1px solid $blue
+      box-shadow: 0px 0px 5px $blue
+    &.error-field
+      border-color: $dark-red
+      box-shadow: 0px 0px 5px #b40001
+  & > div
+    padding-bottom: 20px
+    border-bottom: 1px solid $grey-blue
+    &:last-child
+      border-bottom: none
+  & .button-cancel, .button-save
+    border: none
+    padding: 15px
+    margin: 0 10px
+    border-radius: 5px
+    font-weight: bold
+    transition: all .3s ease
+  & .button-cancel
+    background-color: transparent
+    color: $blue
+    &:hover
+      background-color: $grey-blue
+  & .button-save
+    color: #fff
+    background-color: $blue
+    &:hover
+      background-color: #0022ff
+
+
+.address-list
+  margin-bottom: 20px
+  & > div
+    border: 1px solid $grey-blue
+    padding: 15px 20px
+    border-radius: 5px
+    margin-bottom: 15px
+    & .default-address:after
+      content: 'Default'
+      padding: 10px
+      right: -75px
+      position: absolute
+      top: -5px
+      color: $light-grey
+      font-weight: bold
+    & p
+      color: $light-grey
+  & .controls-address-item
+    & button
+      background-color: transparent
+      color: $blue
+      font-weight: bold
+      outline: none
+      border: none
+      margin-bottom: 15px
+      text-align: right
+      &:hover
+        text-decoration: underline
+
+
+
+.personal-details-wrap
+  & .person-details
+    & > div
+      margin: 20px 0px
+      & > div:first-child
+        & > p:last-child
+          font-size: .9rem
+      & > button
+        align-self: baseline
+        background-color: transparent
+        color: $blue
+        font-weight: bold
+        border: none
+        outline: none
+        &:hover
+          text-decoration: underline
+  & .form-edit-personal
+    & input, select
+      padding: 10px
+      border: 1px solid $grey-blue
+      &:focus
+        outline: 1px solid $blue
+        box-shadow: 0px 0px 5px $blue
+      &.error-field
+        border-color: $dark-red
+        box-shadow: 0px 0px 5px #b40001
+    & .button-cancel, .button-save
+      border: none
+      padding: 15px
+      margin: 0 10px
+      border-radius: 5px
+      font-weight: bold
+      transition: all .3s ease
+    & .button-cancel
+      background-color: transparent
+      color: $blue
+      &:hover
+        background-color: $grey-blue
+    & .button-save
+      color: #fff
+      background-color: $blue
+      &:hover
+        background-color: #0022ff
+
+.wrap-form-email-address
+  & > div
+    padding: 15px 0px
+    border-bottom: 1px solid $grey-blue
+    & > p:first-child
+      font-weight: bold
+    &:nth-child(2)
+      border-bottom: none
+  & form
+    & button
+      right: 0
+      top: 20%
+      border: none
+      background: transparent
+      padding-right: 10px
+      font-size: .9rem
+      font-weight: bold
+      color: $blue
+
+
+
+.wrap-form-person-details
+  & > div
+    padding: 15px 0px
+    & > p:first-child
+      font-weight: bold
+    &:nth-child(2)
+      border-bottom: none
+  & form
+    & button
+      right: 0
+      top: 20%
+      border: none
+      background: transparent
+      padding-right: 10px
+      font-size: .9rem
+      font-weight: bold
+      color: $blue
+  & .wrap-change-password
+    & > div:first-child
+      & > div:first-child
+        border-bottom: 1px solid $grey-blue
+
+

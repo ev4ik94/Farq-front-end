@@ -1,0 +1,32 @@
+@import '../../main-constant'
+
+.carousel-wrap
+  overflow: hidden
+  position: relative
+  & .carousel-controls
+    bottom: 5%
+    z-index: 3
+    right: 30px
+    & > div
+      background-color: #fff
+      border: 1px solid $light-grey
+      border-radius: 10px
+      padding: 5px
+      & > button
+        background-color: transparent
+        border: none
+        outline: none
+        &:first-child:focus > svg, &:last-child:focus > svg
+          stroke: $blue
+        & > svg
+          fill: $main-color
+          width: 20px
+          height: 20px
+        &:nth-child(2) > svg
+          fill: $blue!important
+          width: 35px!important
+          height: 35px!important
+
+
+
+

@@ -1,0 +1,91 @@
+@import '../main-constant'
+
+
+.title-block
+  align-items: center
+  & > div
+    padding: 15px
+    & > svg
+      fill: $grey-333!important
+      margin-right: 10px
+    & > p
+      font-size: 1.5rem
+      font-weight: bold
+  & .vertical-line
+    width: 2px
+    background-color: $light-grey
+    height: 30px
+    padding: 0
+  & a
+    color: $blue!important
+    padding: 5px
+    &:hover
+      color: $blue!important
+      text-decoration: underline!important
+
+
+.top-element-carousel
+  padding: 10px
+  overflow: hidden
+  & > button
+    background-color: transparent
+    border: none
+    outline: none
+    top: 160px
+    & > svg
+      fill: $blue!important
+      width: 30px
+      height: 30px
+    &:first-child
+      left: 10px
+    &:last-child
+      right: 10px
+  & .picture-product
+    height: 150px
+    &:hover > img
+      transform: scale(1.2) translateY(-10px)
+    & > img
+      width: 100%
+      height: 100%
+      transition: all .4s ease
+      object-fit: contain
+  & .top-info
+    height: 200px
+    & > a
+      &:hover
+        text-decoration: underline!important
+      & > p
+        color: $blue
+        font-size: 1rem
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+  & .bot-info
+    & > p
+      font-weight: 600
+      font-size: 1rem
+      margin-top: 10px
+    & > p:nth-child(2)
+      font-weight: 500
+      text-decoration: line-through
+
+
+.top-info
+  .picture-product
+    height: 150px
+    &:hover > img
+      transform: scale(1.2) translateY(-10px)
+    & > img
+      width: 100%
+      height: 100%
+      transition: all .4s ease
+      object-fit: contain
+  & > a
+    &:hover
+      text-decoration: underline!important
+    & > p
+      color: $blue
+      font-size: 1rem
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden

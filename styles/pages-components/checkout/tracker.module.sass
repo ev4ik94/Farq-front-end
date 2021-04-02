@@ -1,0 +1,40 @@
+@import '../../main-constant'
+
+
+
+.main-container
+  border-bottom: 1px solid $grey-blue
+
+.item-tracker-value
+  &:after
+    content: ''
+    width: 20px
+    height: 6px
+    background-color: $grey-blue
+    border-radius: 8px
+    display: inline-block
+    margin-top: 13px
+    margin-left: 8px
+    margin-right: 8px
+  &:last-child
+    &:after
+      display: none
+  &.active
+    & > div
+      background-color: $blue
+      color: #fff
+      font-weight: 600
+    & > p
+      font-weight: 600
+  &  > div:first-child
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    border: 1px solid $grey-blue
+    text-align: center
+    & > span
+      vertical-align: middle
+  & > p
+    line-height: 2
+    margin-left: 5px
+    color: $grey-333

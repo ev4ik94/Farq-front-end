@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd617204-b25d-46c4-b7bf-376f9abaf1c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Main-Component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Main-Component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main-components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main-components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main-components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main-components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages-component/home-components/recently-viewed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages-component/home-components/recently-viewed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main-components/footer.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main-components/footer.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/pages-components/home/carousel-products.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages-components/home/carousel-products.module.sass" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1madpW4JjSAD3HMouwFVOhHb5Js" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../myProjects/Ауф/Angular Test/angular-app-test" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\inogamova_e\marketplace-frontend_v1\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myProjects\market-place\public\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\inogamova_e\marketplace-frontend_v1\pages\product\[product_slug]\[sku_slug]" />
+      <recent name="D:\inogamova_e\marketplace-frontend_v1\pages\product\[...params]" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd617204-b25d-46c4-b7bf-376f9abaf1c8" name="Default Changelist" comment="" />
+      <created>1609735818439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609735818439</updated>
+      <workItem from="1609735819503" duration="55928000" />
+      <workItem from="1609933584082" duration="114334000" />
+      <workItem from="1610597178245" duration="39185000" />
+      <workItem from="1610715982896" duration="112738000" />
+      <workItem from="1611557217790" duration="47582000" />
+      <workItem from="1611810508876" duration="92878000" />
+      <workItem from="1612325811904" duration="20364000" />
+      <workItem from="1612413094836" duration="19935000" />
+      <workItem from="1612504943658" duration="95578000" />
+      <workItem from="1613361757448" duration="4215000" />
+      <workItem from="1613368654059" duration="61493000" />
+      <workItem from="1613635592071" duration="135480000" />
+      <workItem from="1614327201776" duration="72613000" />
+      <workItem from="1615055313934" duration="5491000" />
+      <workItem from="1615269027576" duration="51279000" />
+      <workItem from="1615483897316" duration="125186000" />
+      <workItem from="1616480563948" duration="12721000" />
+      <workItem from="1616497598621" duration="43736000" />
+      <workItem from="1616733500695" duration="75342000" />
+      <workItem from="1617250757088" duration="22693000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612862564026">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612862564026" />
+    <state x="499" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611831081453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1611831081453" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1613631805518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1613631805518" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609934659804">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609934659804" />
+    <state x="438" y="191" key="EditFileWatcherDialog" timestamp="1609934723293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="438" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1609934723293" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1617188475149">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617188475149" />
+    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1612329507752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1612329507752" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1615975018029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1615975018029" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1616156478705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616156478705" />
+  </component>
+</project>

@@ -1,0 +1,38 @@
+@import "../../main-constant"
+
+.wrap-top-content
+  border-bottom: 1px solid $light-grey
+
+.bread-crumbs
+  display: flex
+  margin-top: 20px
+  padding: 10px 0px
+  & > p
+    padding-right: 10px
+    &:after
+      content: ""
+      display: inline-block
+      width: 20px
+      vertical-align: middle
+      height: 20px
+      margin-left: 5px
+      background-image: url(/icons/ios-arrow-right-blue.svg)
+      background-size: contain
+    &:last-child:after
+      content: ""
+      display: none
+    & > a
+      color: $blue!important
+      &:hover
+        color: $main-color!important
+        text-decoration: underline!important
+
+
+.hello-block
+  padding: 40px
+  & > p
+    font-size: 1.3rem
+  & > p:first-child
+    font-weight: bold
+    color: $blue
+    font-size: 4rem

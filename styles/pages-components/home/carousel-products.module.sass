@@ -1,0 +1,134 @@
+@import '../../main-constant'
+
+.wrap-carousel-products
+  overflow: hidden
+  & .top-element-carousel
+    padding: 10px
+    border: 1px solid $light-grey
+    border-radius: 10px
+    overflow: hidden
+    margin-bottom: 15px
+    & > button
+      background-color: transparent
+      border: none
+      outline: none
+      top: 100px
+      &:focus > svg
+        fill: $blue
+      & > svg
+        fill: $light-grey
+        width: 30px
+        height: 30px
+      &:first-child
+        left: 10px
+      &:last-child
+        right: 10px
+  & .picture-product
+    height: 150px
+    &:hover > img
+      transform: scale(1.2) translateY(-10px)
+    & > img
+      width: 100%
+      height: 100%
+      transition: all .4s ease
+      object-fit: contain
+  & .top-info
+    & > a
+      &:hover
+        text-decoration: underline!important
+      & > p
+        color: $blue
+        font-size: 1rem
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+  & .bot-info
+    & > p
+      font-weight: 600
+      font-size: 1rem
+      margin-top: 10px
+    & > p:nth-child(2)
+      font-weight: 500
+      text-decoration: line-through
+
+
+.bot-element-product
+  padding: 10px
+  border: 1px solid $light-grey
+  border-radius: 10px
+  & > div:first-child
+    & p
+      font-size: 1rem
+      & > span
+        color: #fff
+        background-color: $dark-red
+        padding: 3px
+        margin-right: 5px
+  & > div:last-child
+    & .picture-product-bot
+      & > div
+        height: 180px
+        & img
+          width: 100%
+          height: 100%
+          object-fit: contain
+    & .product-name
+      font-size: 1rem
+      color: $blue
+    & > div:last-child
+      & > p
+        margin-top: 10px
+      & > p:last-child
+        text-decoration: line-through
+
+
+.element-carousel
+  & > p:first-child
+    font-size: 1.6rem
+  & > p:nth-child(2)
+    color: $light-grey
+  & > button
+    background-color: transparent
+    border: none
+    outline: none
+    top: 150px
+    &:focus > svg
+      fill: $blue
+    & > svg
+      fill: $light-grey
+      width: 30px
+      height: 30px
+    &:nth-of-type(1)
+      left: 3%
+    &:last-child
+      right: 3%
+  & .picture-product
+    height: 150px
+    &:hover > img
+      transform: scale(1.2) translateY(-10px)
+    & > img
+      width: 100%
+      height: 100%
+      transition: all .4s ease
+      object-fit: contain
+  & .top-info
+    & > a
+      &:hover
+        text-decoration: underline!important
+    &  > p
+        color: $blue
+        font-size: 1rem
+  & .bot-info
+    & > p
+      font-weight: 600
+      font-size: 1rem
+      margin-top: 10px
+    & > p:nth-child(2)
+      font-weight: 500
+      text-decoration: line-through
+
+
+@media screen and (max-width: 992px)
+    .top-element-carousel
+      margin-top: 15px
+

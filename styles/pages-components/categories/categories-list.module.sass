@@ -1,0 +1,35 @@
+@import '../../main-constant'
+
+
+.wrap-categories-list
+  margin-top: 30px
+  margin-bottom: 30px
+  & > div
+    border: 1px solid $light-grey
+    border-right: none
+    padding: 15px
+    margin-bottom: 20px
+    & > div:nth-child(2)
+      & > a
+        color: $blue
+        font-weight: 700
+        font-size: 1.1rem
+        &:hover
+          text-decoration: underline!important
+    &:nth-child(3n), &:last-child
+      border-right: 1px solid $light-grey
+    & > div:last-child
+      column-count: 2
+      & p
+        font-size: .95rem
+        & a
+          color: $blue
+          padding: 3px
+          &:hover
+            color: $main-color!important
+            text-decoration: underline!important
+  & .picture-category
+    & > img
+      width: 100%
+      height: 100%
+      object-fit: contain

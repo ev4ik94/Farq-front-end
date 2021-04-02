@@ -1,0 +1,69 @@
+@import '../../main-constant'
+
+.content-sign-signup
+  padding: 15px
+  .list-links
+    & p > a
+      color: $blue!important
+      &:hover
+        color: $main-color!important
+        text-decoration: underline!important
+    & p:nth-of-type(3n)
+      border-bottom: 1px solid $light-grey
+      padding-bottom: 10px
+  & > div
+    border-right: 1px solid $light-grey
+    &:last-child
+      border-right: none
+  .block-sign-in
+    padding: 0px 30px
+    & > p:first-child
+      font-weight: 600
+      font-size: 1.3rem
+      text-align: left
+    & > a
+      background-color: $blue
+      padding: 10px
+      border-radius: 5px
+      display: block
+      color: #fff!important
+      text-align: center
+      font-weight: 600
+      &:hover
+        background-color: rgb(0, 122, 255, .7)
+  .block-sign-up
+    padding: 0px 20px
+    &:before
+      content: 'или'
+      padding: 5px
+      position: absolute
+      background-color: #fff
+      left: -20px
+      top: 45%
+    & > p:first-child
+      font-size: 1.4rem
+    & > p:nth-child(2)
+      font-size: 1.2rem
+    & > ul
+      & > li
+        margin-bottom: 7px
+        &:before
+          content: '\02714'
+          width: 18px
+          height: 18px
+          display: inline-block
+          color: #0ccf0c
+    &  > a
+      color: $blue!important
+      font-weight: 600
+      text-align: center
+      display: block
+      font-size: 1.2rem
+      padding: 5px
+      background-color: $grey-blue
+      border-radius: 5px
+      &:hover
+        color: $blue!important
+        background-color: rgba(188,199,212,.7)
+
+

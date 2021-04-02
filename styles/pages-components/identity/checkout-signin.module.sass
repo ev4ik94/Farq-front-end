@@ -1,0 +1,45 @@
+@import '../../main-constant'
+
+.wrap-continue
+  background-color: #ffff
+  padding: 15px 20px
+  align-self: baseline
+  border-radius: 10px
+  border: 1px solid #e0e6ef
+  & > h3
+    font-weight: bold
+    text-align: center
+  & > p
+    text-align: center
+    font-size: 1.1rem
+  & > a
+    display: block
+    padding: 15px
+    background-color: $blue
+    color: #ffff
+    border-radius: 3px
+    font-size: 1.2rem
+    font-weight: bold
+    text-align: center
+    transition: all .3s ease
+    &:hover
+      background-color: rgba(0,122,255,.7)
+
+
+.vertical-line
+  padding: 0px 20px
+  margin: 0px 30px
+  &:before
+    content: attr(data-title)
+    padding: 10px
+    font-size: 1.2rem
+    font-weight: bold
+    position: absolute
+    top: 20%
+    background-color: #f4f6f9
+    left: 50%
+    transform: translateX(-50%)
+  & > div
+      padding: 2px
+      background-color: #939393
+      height: 50%

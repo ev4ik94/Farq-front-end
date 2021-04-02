@@ -1,0 +1,117 @@
+@import '../../main-constant'
+
+
+.nav-toggles-button
+  border-bottom: 1px solid  $grey-blue
+  & button
+    color: $blue
+    padding: 10px
+    background-color: transparent
+    border: none
+    outline: none
+    &:before
+      content: ''
+      width: 0
+      height: 2px
+      background-color: $main-color
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+    &  svg
+      width: 30px
+      height: 30px
+      fill: $blue
+    &.active
+      color: $main-color
+      position: relative
+      &:before
+        content: ''
+        padding-right: 50%
+        padding-left: 50%
+        transition: all .3s ease
+      &  svg
+        fill: $main-color
+
+
+/*------Item product list----*/
+
+
+.item-product-recently-saved
+  border: 1px solid $grey-blue
+  padding: 15px
+  border-radius: 5px
+
+
+
+.item-product-title
+  & a
+    font-size: 1.3rem
+    font-weight: 500
+    color: $blue
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+    &:hover
+      text-decoration: underline!important
+  & > p:first-child
+    min-height: 60px
+  & > p:last-child
+    font-size: 1.3rem
+    font-weight: bold
+
+
+.product-image
+  & > a > div
+    height: 250px
+    padding: 10px
+
+
+.button-delete
+  background-color: transparent
+  border: none
+  outline: none
+  & > svg
+    fill: $blue
+    width: 25px
+    height: 25px
+  &:hover
+    & > svg
+      fill: $main-color
+
+.item-buttons
+  & button
+    padding: 10px
+    margin-top: 15px
+    border-radius: 5px
+    & > svg
+      width: 30px
+      height: 30px
+      margin-right: 10px
+  & > button.w-45
+    width: 45%
+
+
+.preloader-item
+  background-color: rgba(255,255,255,.7)
+  z-index: 9
+  top: 0
+  left: 0
+  display: none
+  & > div
+    margin: 40% auto
+
+
+.button-clear-all
+  background-color: transparent
+  border: none
+  outline: none
+  color: $blue
+  width: 100%
+  text-align: right
+  padding: 10px 20px
+  &:hover
+    text-decoration: underline
+
+

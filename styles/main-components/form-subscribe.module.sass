@@ -1,0 +1,34 @@
+@import '../main-constant'
+
+.wrap-subscribe-form
+  &  div:first-child > p
+    color: $dark-grey
+    font-size: 1.2rem
+  & div:last-child
+    & form
+      & input
+        height: 50px
+    & button
+      background-color: $main-color
+      color: #fff
+      font-weight: 600
+      border: none
+      outline: none
+      box-shadow: none
+      &:hover
+        background-color: rgba(39, 55, 76) !important
+
+
+.social-links
+  margin-top: 15px
+  & > a
+    padding: 10px
+    & > svg
+      width: 30px
+      height: 30px
+      fill: $dark-grey
+      transition: all .3s ease
+    &:hover
+      & > svg
+        fill: $blue
+

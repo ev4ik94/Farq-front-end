@@ -1,0 +1,56 @@
+@import '../../main-constant'
+
+
+.products-carousel-buy
+  padding: 10px
+  overflow: hidden
+  & .btn-buy-product
+    background-color: $main-second-color!important
+    border: none
+    outline: none
+    padding: 7px 10px
+    font-size: 1.1rem
+    color: $main-color!important
+    border-radius: 5px
+    font-weight: bold
+    margin: 10px auto
+    transition: all .3s ease
+    & > svg
+      fill: $main-color!important
+      margin-right: 10px
+      vertical-align: text-bottom
+    &:hover
+      background-color: #34c4a8 !important
+  & .controls-button
+    & > svg
+      fill: $blue!important
+      width: 30px
+      height: 30px
+    &:first-child
+      left: 10px
+      top: 50%
+    &:last-child
+      right: 10px
+      top: 50%
+  & .picture-product
+    height: 150px
+    & > img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  & .top-info
+    & > div:last-child
+      & > p
+        padding: 5px 0px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        & > a
+          color: $blue!important
+          font-size: .9rem
+          &:hover
+            text-decoration: underline!important
+      & > div:last-child
+        & .discount-price
+          text-decoration: line-through

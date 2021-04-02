@@ -1,0 +1,120 @@
+@import '../../main-constant'
+
+.main-wrap
+  background: linear-gradient(90deg, #f4f6f9 0, #f4f6f9 75%, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0))
+
+
+.error-field
+  border: 1px solid #d40000!important
+  color: #d40000
+
+
+
+.form-wrap-shipping, .main-wrap
+  & input, & select
+    padding: 10px
+    outline: none
+    border: 1px solid $light-grey
+    width: 100%
+    margin-bottom: 15px
+
+.group-form
+  padding: 15px
+  background-color: #fff
+  border-radius: 3px
+  & > p:first-child
+    font-size: 1.3rem
+    font-weight: 600
+  & > p
+    font-size: 1.1rem
+    margin-bottom: 0!important
+
+
+.wrap-calendar
+  & h2
+    font-weight: 400
+  & input
+    color: $light-grey
+    &::-webkit-calendar-picker-indicator
+      opacity: 0!important
+      outline: none!important
+      position: relative
+      z-index: 3
+      cursor: pointer
+    &::-webkit-details-marker
+      color: red
+      display: none!important
+
+
+.date-picker
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 25px
+    height: 25px
+    background-image: url("/icons/calendar.svg")
+    background-size: contain
+    top: 25px
+    right: 10px
+
+.button-accordion
+  & button
+    width: 100%
+    text-align: left
+    box-shadow: none!important
+  & svg
+    width: 40px
+    padding-right: 5px
+
+
+.gift-form
+  & button
+    border: none
+    box-shadow: none!important
+    background-color: $blue
+    color: #fff
+    padding: 13px
+    font-weight: 600
+    outline: none
+    transition: all .4s ease
+    &:hover
+      background-color: #0040ff
+
+
+
+
+.check-bocks
+  width: 25px
+  height: 25px
+  background-color: #fff
+  border-radius: 50%
+  position: relative
+  border: 1px solid $light-grey
+  margin-left: 10px
+  cursor: pointer
+  &.active
+    background-color: $blue
+    border: 1px solid $blue
+    &:before
+      content: ""
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      position: absolute
+      display: block
+      width: 18px
+      height: 18px
+      background-color: #fff
+      border-radius: 50%
+
+
+.block-payments-type
+  display: flex
+  & > div
+    padding: 15px 30px 15px 0px
+    display: flex
+    & p
+      margin-bottom: 0!important
+      font-size: 1.1rem
+      font-weight: bold

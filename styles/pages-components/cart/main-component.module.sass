@@ -1,0 +1,23 @@
+@import '../../main-constant'
+
+
+.main-wrap
+  background: linear-gradient(90deg, #f4f6f9 0, #f4f6f9 75%, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0))
+
+
+.container
+  min-height: 400px
+
+
+.overlay-preloader
+  background-color: rgba(29,41,56, .8)
+  left: 0
+  right: 0
+  top: 0
+  z-index: -1
+  opacity: 0
+  height: 100%
+  transition: all .4s ease
+  &.active
+    opacity: 1
+    z-index: 99!important

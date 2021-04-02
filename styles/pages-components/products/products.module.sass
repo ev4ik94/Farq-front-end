@@ -1,0 +1,199 @@
+@import '../../main-constant'
+
+
+
+
+.preloader-spinner
+  display: none
+
+
+.loading-transition
+  opacity: .3
+  & .preloader-spinner
+    z-index: 3
+    opacity: 1
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    display: block
+
+
+
+.container-products
+  & h1
+    color: #000
+
+
+
+.wrap-product-list
+  button[disabled='true']
+    opacity: .5
+    cursor: default
+  & .filters-products
+    position: sticky
+    overflow-y: scroll
+    border: 1px solid $light-grey
+    top: 15px
+    height: 90vh
+    & .sticky-container
+      height: calc(100vh - 14px)
+  & .products-list-container
+    & .top-content-products
+      & > p
+        font-size: 1.3rem
+      & .dropdown-filters
+        & > div
+          padding: 15px
+          & a
+            color: $main-color
+            &:hover
+              color: $blue
+              text-decoration: underline!important
+        & button
+          background-color: transparent
+          color: $main-color
+          border: 1px solid $main-color
+          outline: none
+          box-shadow: none!important
+          width: 200px
+          text-align: left
+          &:after
+            content: ''
+            width: 30px
+            height: 30px
+            position: absolute
+            right: 15px
+            top: 5px
+            border: none
+            background-image: url("/icons/ios-arrow-right-blue.svg")
+            background-size: contain
+            transform: rotate(90deg)
+    & .item-product
+      border-bottom: 1px solid $light-grey
+      &:last-child
+        border: none
+      & .picture-product
+        & img
+          width: 100%
+          height: 100%
+          object-fit: contain
+      & .info-product
+        & a
+          font-size: 1.2rem
+          color: $blue
+        & a:hover
+          text-decoration: underline!important
+        & .buttons-product
+          & svg
+            width: 30px
+            height: 30px
+            fill: $main-color
+          & > div.active
+            & svg
+              transition: all .3s ease
+              fill: $main-second-color
+              & g
+                transition: all .3s ease
+                fill: $main-second-color
+            & > p
+              color: $main-second-color
+          & p
+            font-size: 1.1rem
+            align-self: center
+            padding-left: 10px
+          & .button-compare, & .button-save
+            cursor: pointer
+            margin-right: 20px
+          & .button-save
+            & svg
+              fill: $main-color
+    & .product-price-cart
+      & p
+        font-size: 1.4rem
+        font-weight: 700
+        color: #000
+      & button
+        padding: 10px
+        background-color: $main-second-color
+        color: $main-color
+        border: none
+        border-radius: 10px
+        text-align: center
+        width: 100%
+        transition: all .3s ease
+        & > p
+          font-size: 1rem
+          align-self: center
+          color: $main-color
+          font-weight: 500
+        &:hover
+          background-color: $color-hover-green
+        & svg
+          fill: $main-color
+          width: 30px
+          height: 30px
+          margin-right: 10px
+
+
+.pagination
+  & p
+    font-size: 1.2rem
+    font-weight: 700
+    color: $blue
+    padding: 5px 10px
+    & > a:hover
+      text-decoration: underline!important
+    &.active
+      & > a
+        color: $main-color
+        &:hover
+          text-decoration: none!important
+
+
+.added-cart
+  background-color: $light-grey!important
+  padding: 10px
+  color: $main-color
+  border-radius: 10px
+  text-align: center
+  width: 100%
+  transition: all .3s ease
+  & > span
+    font-size: 1rem
+    align-self: center
+    color: $main-color
+    font-weight: 500
+  & svg
+    fill: $main-color
+    width: 30px
+    height: 30px
+    margin-right: 10px
+  &:hover
+    background-color: $light-grey!important
+
+
+.spinner-button
+  margin-left: 10px
+  align-self: center
+  width: 25px
+  height: 25px
+
+
+.rating-block
+  & button
+    border: none
+    background: transparent
+    outline: none!important
+    & svg
+      width: 20px
+      height: 20px
+      transition: all .3s ease
+    &:hover svg
+      fill: #ffbf00
+  & span
+    vertical-align: middle
+
+
+
+
+

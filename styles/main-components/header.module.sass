@@ -1,0 +1,509 @@
+@import '../main-constant'
+
+.header-wrap
+  z-index: 10
+  position: relative
+
+.nav-bar
+  background-color: $main-color
+  &:first-child
+    border-bottom: 1px solid rgba(255,255,255,.6)
+  & .icon-brand
+    width: 100px
+    & img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  & .form-search-nav
+    & button
+      right: 20px
+      background-color: transparent
+      color: $main-color
+      border: none
+      outline: none
+      box-shadow: none
+      & > svg
+        fill: $main-color
+  & .top-nav-link
+    & a
+      color: $white-color
+      border-right: 1px solid $white-color
+      margin: 0px 10px 0px 0px
+      transition: all .4s ease
+      &:hover
+        color: #fff
+      &:last-child
+        border-right: none
+      & > span
+        padding-left: 10px
+  & .toggle-button
+    border: none
+    outline: none
+    & > span
+      background-image: url("/icons/menu.svg")
+
+
+.md-link
+  color: $white-color!important
+  margin: 0px 10px 0px 0px
+  transition: all .4s ease
+  &:hover
+    color: #fff!important
+  & > svg
+    width: 25px
+    height: 25px
+
+
+.nav-bar
+  & a
+    color: $white-color
+    margin: 0px 10px 0px 0px
+    transition: all .4s ease
+    &:hover
+      color: #fff
+  & svg
+    width: 25px
+    height: 25px
+    align-self: center
+    fill: $white-color
+    transition: all .4s ease
+
+
+
+.dropdown-link-title
+  & > div
+    width: 300px
+    top: 120%
+    border-radius: 0
+    padding: 5px 10px
+    & .nav-link
+      margin: 0
+      display: block
+      padding: 7px 15px
+      border-bottom: 1px solid $light-grey
+      color: $blue!important
+      &:hover
+        color: $blue!important
+      &:last-child
+        border: none
+  & > button
+    color: #fff
+    font-weight: 500
+    background-color: transparent!important
+    border: none!important
+    outline: none!important
+    box-shadow: none!important
+    &:first-child
+      padding-left: 0
+
+
+  & .drop-down-sub
+    & > div
+      width: 300px
+      border-radius: 0
+      padding: 5px 10px
+      left: 104%
+    & button
+      border-bottom: 1px solid $light-grey!important
+      border-right: none
+      border-left: none
+      border-top: none
+      width: 100%
+      background-color: transparent!important
+      outline: none!important
+      box-shadow: none!important
+      color: $blue!important
+      text-align: left
+      border-radius: 0
+      &:after
+        display: inline-block
+        margin-left: .255em
+        vertical-align: .255em
+        content: ""
+        border: none
+        position: absolute
+        right: 10px
+        top: 10px
+        width: 20px
+        height: 20px
+        background-image: url("/icons/ios-arrow-right-blue.svg")
+        background-size: contain
+    &  a
+      margin: 0
+      border-bottom: 1px solid $light-grey
+      display: block
+      padding: 7px 15px
+      color: $blue!important
+      &:hover
+        color: $blue!important
+      &:last-child
+        border: none!important
+
+
+.rgt-link
+  & > div
+    &:hover svg
+      fill: #fff
+    & > div
+      & button
+        background-color: transparent!important
+        border: none
+        font-size: .9rem
+        font-weight: 400
+        color: $light-grey
+        box-shadow: none!important
+        outline: none
+      & > svg
+        fill: $light-grey
+        width: 20px
+        height: 20px
+        align-self: center
+        transition: all .4s ease
+
+
+.sub-menu-collapse
+  &.show
+    transition: all .2s ease
+    transform: translate(0px, 0px)
+  &.hide
+    transform: translate(1000px, 0px)
+  top: 0
+  width: 100%
+  padding: 15px 0px
+  & > div:first-child
+    padding-bottom: 5px
+    & button
+      border: none
+      outline: none
+      background-color: transparent!important
+      font-size: 1.1rem
+      font-weight: 600
+      color: #fff
+      &:before
+        content: ""
+        display: inline-block
+        width: 20px
+        height: 20px
+        background-image: url(/icons/ios-arrow-left.svg)
+        background-size: contain
+        vertical-align: middle
+  & > div:last-child
+    & > div
+      padding: 5px 0px
+      & button
+        outline: none
+        background-color: transparent!important
+        color: #fff
+        border: 1px solid #fff
+        width: 100%
+        text-align: left
+        &:after
+          display: inline-block
+          margin-left: .255em
+          vertical-align: .255em
+          content: ""
+          border: none
+          position: absolute
+          right: 10px
+          top: 10px
+          width: 20px
+          height: 20px
+          background-image: url("/icons/ios-arrow-right.svg")
+          background-size: contain
+    & > a
+      padding: 6px 15px
+      color: #fff!important
+      font-size: 1rem
+      display: block
+      width: 100%
+      border: 1px solid #fff
+      border-radius: 4px
+      margin: 5px 0px
+
+
+.dropdown-link-title
+  & > div
+    padding: 0
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      width: 0
+      height: 0
+      top: -15px
+      left: 50px
+      border: 15px solid transparent
+      border-bottom-color: $light-grey-blue
+      border-top: 0
+  & > div > div
+    width: 800px
+    height: 600px
+    & > div
+      padding: 15px
+      &:first-child > p
+        &.hover-active
+          background-color: $main-color
+          & a
+            color: #fff
+          & svg
+            opacity: 1
+        & > a
+          padding: 10px 0px 10px 15px
+          display: block
+          & > svg
+            opacity: 0
+            position: absolute
+            right: 0
+      &:last-child > a
+        color: $blue!important
+        font-size: 1.2rem
+        font-weight: bold
+        &:hover
+          text-decoration: underline!important
+      & a
+        color: $grey-333!important
+        font-size: .8rem
+        &:hover
+          color: $blue!important
+      & a.title-link
+        color: $main-color!important
+        font-size: .9rem
+        &:hover
+          text-decoration: underline!important
+      &:first-child
+        background-color: $light-grey-blue
+        & a
+          font-size: 1rem
+      &:last-child
+        overflow-y: scroll
+        background-color: #fff
+  & .link-more > a
+    color: $blue!important
+    font-size: .9rem
+    &:hover
+      text-decoration: underline!important
+    & > span
+      padding: 5px 0px
+      font-weight: bold
+    & > svg
+      fill: $blue
+      width: 15px
+      height: auto
+      margin-left: 5px
+      vertical-align: text-bottom
+
+
+
+
+
+
+
+@media screen and (max-width: 992px)
+  .dropdown-link-title
+    padding: 5px 0px
+    & > button
+      width: 100%
+      text-align: left
+      border: 1px solid!important
+      padding: 10px 15px!important
+      border-radius: 5px
+      &:after
+        display: inline-block
+        margin-left: .255em
+        vertical-align: middle
+        content: ""
+        border: none
+        position: absolute
+        right: 10px
+        width: 20px
+        height: 20px
+        background-image: url("/icons/ios-arrow-right-blue.svg")
+        background-size: contain
+  .rgt-link
+    & > div
+      & > div
+        padding: 5px 0px
+        width: 100%
+        & button
+          border: 1px solid!important
+          padding: 10px 15px!important
+          border-radius: 5px
+          text-align: left
+          width: 100%
+          color: #fff
+          font-size: 1rem
+          &:after
+            content: ""
+            border: none
+  .collapse-navbar
+    & .nav-bar
+      padding-left: 0
+  .top-nav-link
+    & a
+      border-right: none!important
+  .dropdown-link-title
+    & > div
+      display: none!important
+  .nav-bar:first-child
+    border-bottom: none
+  .nav-bar:last-child
+    overflow: hidden
+
+.dropdown-account-authenticated-btn > div
+  top: 130%
+  left: -50px
+  width: 200px
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    top: -15px
+    left: 50px
+    border: 15px solid transparent
+    border-bottom-color: #fff
+    border-top: 0
+  & p
+    border-bottom: 1px solid $light-grey
+    display: flex
+    align-items: center
+    &:last-child
+      border-bottom: none
+  & a
+    color: $grey-333!important
+    padding: 10px
+    display: block
+    &:hover
+      text-decoration: underline!important
+      color: $grey-333!important
+  & button
+    color: $grey-333!important
+    padding: 10px
+    font-size: 1rem!important
+    &:hover
+      text-decoration: underline
+  & svg
+    fill: $grey-333!important
+    margin-left: 10px
+
+
+.dropdown-account-btn > div
+  margin: 0px
+  width: 1100px
+  left: -500px
+  top: 130%
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    top: -15px
+    left: 500px
+    border: 15px solid transparent
+    border-bottom-color: #fff
+    border-top: 0
+
+
+.drop-down-recently > div
+  margin: 0px
+  width: 1000px
+  left: -500px
+  top: 130%
+  padding: 15px
+  height: auto
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    top: -15px
+    left: 500px
+    border: 15px solid transparent
+    border-bottom-color: #fff
+    border-top: 0
+  & > div:first-child
+    border-bottom: 1px solid $light-grey
+    & > svg
+      fill: $light-grey!important
+      width: 40px
+      height: 40px
+      margin-right: 10px
+    & > h2
+      color: $light-grey
+  & > div:last-child
+    & > div:first-child
+      border-right: 1px solid $light-grey
+      & > p:first-child
+        font-size: 1.5rem
+        font-weight: bold
+      & > a
+        color: $blue!important
+        &:hover
+          text-decoration: underline!important
+    & > div:last-child
+      & > p
+        color: $light-grey
+
+
+.dropdown-button-drop-order > div
+  margin: 0px
+  padding: 15px
+  width: 900px
+  left: -600px
+  top: 130%
+  height: auto
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    top: -15px
+    right: 250px
+    border: 15px solid transparent
+    border-bottom-color: #fff
+    border-top: 0
+
+
+.dropdown-drop-saved > div
+  margin: 0px
+  width: 900px
+  left: -750px
+  top: 130%
+  padding: 15px
+  height: auto
+  &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    top: -15px
+    right: 100px
+    border: 15px solid transparent
+    border-bottom-color: #fff
+    border-top: 0
+  & > div:first-child
+    border-bottom: 1px solid $light-grey
+    & > svg
+      fill: $light-grey!important
+      width: 40px
+      height: 40px
+      margin-right: 10px
+    & > h2
+      color: $light-grey
+  & > div:last-child
+    & > div:first-child
+      border-right: 1px solid $light-grey
+      & > p:first-child
+        font-size: 1.5rem
+        font-weight: bold
+      & > a
+        color: $blue!important
+        &:hover
+          text-decoration: underline!important
+    & > div:last-child
+      & > p
+        color: $light-grey
+
+
+
+
